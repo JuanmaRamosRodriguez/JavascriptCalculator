@@ -87,7 +87,9 @@
         border: 5px solid #072da8;
         padding: 8px;
         background: #446ae7;
-        width: 400px; 
+        width: 400px;
+        margin: auto;
+        max-width: 400px;
         position: relative;
     }
     .calcScreen{
@@ -115,13 +117,25 @@
     .container h5:hover {
         transform: scale(1.1);
 }
+@media (max-width: 576px) {
+    .calculadora {
+        max-width: 100%;
+    }
+    .col-4.col-lg {
+        flex: 0 0 50%; 
+        max-width: 50%; 
+    }
+    .col-4.col-lg .row.text-center {
+        flex-wrap: nowrap; 
+    }
+}
 
     </style>
 </head>
 
 <body class="bg-fondo">
 
-    <div class="container-fluid my-5">
+    <div class="container my-5">
         
         <div class="row text-center">
             <div class="col">
